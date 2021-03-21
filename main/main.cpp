@@ -15,7 +15,6 @@ extern "C" {
 #include "MeasScreen.h"
 
 
-
 /* Littlevgl specific */
 #ifdef LV_CONF_INCLUDE_SIMPLE
 #include "lvgl.h"

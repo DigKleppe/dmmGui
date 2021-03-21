@@ -17,7 +17,7 @@ LV_FONT_DECLARE(tlwgmono20);
 LV_FONT_DECLARE(tlwgmonoBold20);
 
 #define FONT &dejaSansMono25
-#define PADDING 1
+#define PADDING 4
 
 int speed = 23;
 int res =5;
@@ -172,7 +172,7 @@ MenuSettings::MenuSettings(MenuSetttingsDesrc_t * menuSettings) {
 
 	lv_style_set_pad_top(&menuStyle, LV_STATE_DEFAULT, PADDING);
 	lv_style_set_pad_bottom(&menuStyle, LV_STATE_DEFAULT, PADDING);
-	lv_style_set_pad_left(&menuStyle, LV_STATE_DEFAULT, PADDING);
+	lv_style_set_pad_left(&menuStyle, LV_STATE_DEFAULT, PADDING+2);
 	lv_style_set_pad_right(&menuStyle, LV_STATE_DEFAULT, PADDING);
 
 

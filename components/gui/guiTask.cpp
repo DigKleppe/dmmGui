@@ -80,6 +80,7 @@ void guiTask(void *pvParameter) {
 
 	lv_disp_drv_t disp_drv;
 	lv_disp_drv_init(&disp_drv);
+
 	disp_drv.flush_cb = disp_driver_flush;
 
 	/* When using a monochrome display we need to register the callbacks:
@@ -111,6 +112,7 @@ void guiTask(void *pvParameter) {
 	esp_timer_handle_t periodic_timer;
 	ESP_ERROR_CHECK(esp_timer_create(&periodic_timer_args, &periodic_timer));
 	ESP_ERROR_CHECK(esp_timer_start_periodic(periodic_timer, LV_TICK_PERIOD_MS * 1000));
+//	lv_disp_set_rotation()
 
 	while (1) {
 		/* Delay 1 tick (assumes FreeRTOS tick is 1ms */
